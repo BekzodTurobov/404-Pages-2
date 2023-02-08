@@ -1,0 +1,70 @@
+:root {
+  /* COLORS */
+  --color-white-base: #ffffff;
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f2f4f7;
+  --color-grey-200: #eeeeee;
+  --color-grey-300: #d0d5dd;
+  --color-grey-400: #98a2b3;
+  --color-grey-500: #667085;
+  --color-grey-600: #475467;
+  --color-grey-700: #344054;
+  --color-grey-900: #101828;
+  --color-purple-100: #f4ebff;
+  --color-purple-300: #d6bbfb;
+  --color-purple-600: #7f56d9;
+  --color-purple-700: #6941c6;
+  --color-purple-800: #53389e;
+  --color-green-50: #ecfdf3;
+  --color-green-700: #027a48;
+
+  /* FONT WEIGHTS */
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
+  /* //////// */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem var(--color-purple-100);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #101828;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+/* **************************************** */
+/* HELPER CLASSES  */
+/* **************************************** */
+
+.options-container.active {
+  max-height: 11rem;
+  opacity: 1;
+  overflow-y: scroll;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.options-container.active + .box .down-icon {
+  transform: rotateX(180deg);
+}
